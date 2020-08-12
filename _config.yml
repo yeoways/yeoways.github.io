@@ -19,9 +19,9 @@ disqus_shortname: #disqus shortname
 
 user:
   name: Yeoways
-  pic: /assets/img/cat.jpg
+  pic: /assets/img/tx.jpg
   picAlt: "yeoways"
-  job: a student from wenzhou
+  job: a student from jinhua
   aboutme: true # comment this out if you don't need the 'about' page.
 
 exclude:
