@@ -1,0 +1,82 @@
+---
+title: Java学习笔记
+categories: [writing]
+comments: true
+---
+
+<dfn info="You can add extra information">Hover</dfn> me.
+
+
+## Code block
+二维数组相关内容
+
+a 中的 {1,2,3} 即为第一行，{4,2,7}为第二行。
+```java
+   double[][] a = new double[][] {{1,2,3},{4,2,7}}
+```
+
+方法1: 定义并初始化str 
+```java
+   String[][] str1= new String[][]{{"a","b","c",},{"d","e","f",},{"g","h","i"}};
+```
+
+
+方法2: 定义并初始化str ；
+```java
+    String[][] str={{"a","b","c",},{"d","e","f",},{"g","h","i"}};
+```
+
+
+把整数转化成小写字母:
+```java
+    ch=1+'a'  ch='b' 
+    StringBuilder sb = new StringBuilder();
+    sb.append((char)(s.charAt(i)-'0'+'a'));   //把数字字符转化成小写字母，并添加到字符串str后面
+```
+
+
+三目(条件)运算符
+举例用三目运算符找出变量a和b中较大的数 
+```java
+    int a=10,b=1;
+    int max=a>b?a:b;
+```
+
+concat() 方法用于将指定的字符串参数连接到字符串上。
+```java
+  public String concat(String s)
+  实例
+  public class Test {
+      public static void main(String args[]) {
+          String s = "菜鸟教程：";
+          s = s.concat("www.runoob.com");
+          System.out.println(s);
+      }
+```
+
+
+数组的一些方法
+Arrays类的静态方法，对数组进行排序 
+Arrays.sort(int[] a) 
+
+比较数组score1, score2是否相等
+Arrays.equals(score1, score2)     return true or false
+
+
+
+HashSet的一些常用方法：
+添加元素：
+
+hashset.add(E e)：返回boolean型，如果此 set 中尚未包含指定元素，则添加指定元素；如果此 set 已包含该元素，则该调用不更改 set 并返回 false。
+
+删除元素：
+
+hashset.clear()：从此 set 中移除所有元素。
+
+hashset.remove(Object o)：如果指定元素存在于此 set 中，则将其移除。
+
+hashset.isEmpty()：如果此 set 不包含任何元素，则返回 true。
+
+hashset.contains(Object o)：如果此 set 包含指定元素，则返回 true。
+
+hashset.size()：返回此 set 中的元素的数量（set 的容量）。
